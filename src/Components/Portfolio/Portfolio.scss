@@ -1,0 +1,179 @@
+@import "../../Global.scss";
+
+.portfolio {
+  width: 700px;
+  background-color: #fbf4e9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h1 {
+    margin-top: 60px;
+    font-size: 50px;
+    @include mobile {
+      margin-top: 30px;
+      font-size: 30px;
+    }
+  }
+
+  ul {
+    margin: 10px;
+    padding: 0px;
+    list-style: none;
+    display: flex;
+  }
+  .containerAbout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    width: 30%;
+    background-color: black;
+    color: white;
+    border-radius: 30px;
+    padding: 2% 5%;
+    border: 1px solid black;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 5pt 0 black;
+    transition: all 1s ease;
+    position: relative;
+    @include mobile {
+      width: 80%;
+      margin-top: 4%;
+    }
+    .width100 {
+      position: absolute;
+      top: 70px;
+      width: 100px;
+      margin-bottom: 10px;
+    }
+    p {
+      padding-top: 0;
+      font-size: 0;
+      text-align: center;
+      color: $mainColor;
+      word-spacing: 3px;
+      transition: all 0.4s ease;
+    }
+    ul {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      li {
+        display: flex;
+        align-items: center;
+        cursor: auto;
+        font-size: 14px;
+
+        span {
+          margin-left: 5px;
+        }
+      }
+      &:hover {
+        font-size: 20px;
+      }
+    }
+    &:hover {
+      background-color: whitesmoke;
+      width: 80%;
+      p,
+      ul {
+        color: black;
+        font-size: 20px;
+        visibility: visible;
+        @include mobile {
+          font-size: 12px;
+        }
+      }
+      .hideOnMobile {
+        font-size: 20px;
+        @include mobile {
+          font-size: 0%;
+        }
+      }
+    }
+    &:hover {
+      .width100 {
+        display: none;
+      }
+      li {
+        padding: 2px;
+      }
+      h4 {
+        display: none;
+      }
+    }
+  }
+  .container {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    transition: all 0.5s ease;
+    @include mobile {
+      margin-top: 10px;
+    }
+    .item {
+      text-align: center;
+      border-radius: 20px;
+      width: 320px;
+      margin: 10px 20px;
+      background-color: black;
+      cursor: pointer;
+      transition: all 0.5s ease;
+      @include mobile {
+        width: 50%;
+      }
+      a{
+        text-decoration: none;
+      }
+      h3 {
+        color: white;
+        font-size: 20px;
+        padding: 3%;
+        transition: all 0.5s ease;
+        @include mobile {
+          font-size: 10px;
+        }
+      }
+      img {
+        width: 320px;
+        object-fit: cover;
+        border-radius: 18px 18px 0 0;
+        transition: all 0.5s ease;
+        @include mobile {
+          width: 100%;
+        }
+      }
+
+      &:hover {
+        background-color: $mainColor;
+        width: 400px;
+        img {
+          width: 400px;
+          @include mobile {
+            width: 100%;
+          }
+        }
+        @include mobile {
+          width: 80%;
+        }
+      }
+    }
+  }
+  .containerSkills{
+    margin-top: 40px;
+    width: 50%;
+    margin-left: 5%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    @include mobile{
+       margin:0;
+       width: 80%;
+    }
+  }
+}

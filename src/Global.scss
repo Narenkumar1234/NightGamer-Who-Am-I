@@ -1,0 +1,16 @@
+@import "~bootstrap/scss/bootstrap";
+$mainColor: #C84B31;
+
+$width: 768px;
+$tab: 600px;
+@mixin mobile {
+    @media (max-width: #{$width}){
+        @content
+    }
+};
+
+@mixin tab {
+    @media (max-width: #{$tab}){
+        @content
+    }
+}

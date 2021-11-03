@@ -1,0 +1,15 @@
+@import "../../Global.scss";
+.skillsContainer{
+    img{
+    width: 60%;
+    text-align: center;
+    padding-top: 10px;
+    @include mobile{
+        width: 50px;
+    }
+
+}
+h5{
+text-align: center;
+}
+}

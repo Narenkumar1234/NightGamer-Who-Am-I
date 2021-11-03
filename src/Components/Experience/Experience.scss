@@ -1,0 +1,55 @@
+@import "../../Global.scss";
+.cardIntern {
+  width: 300px;
+  height: 250px;
+  background-color: rgb(54, 47, 47);
+  border-radius: 10px;
+  transition: all 1s ease;
+  cursor: pointer;
+  @include mobile {
+    margin-bottom: 10px;
+    height: 90%;
+  }
+  .box {
+    padding: 7% 10%;
+    color: white;
+    text-align: center;
+
+    h5 {
+      font-weight: 400;
+      transition: all 0.4s ease;
+      @include mobile {
+        font-size: 20px;
+      }
+    }
+
+    .title {
+      margin-top: 0;
+      color: white;
+      font-weight: 400;
+      font-size: 40px;
+      transition: all 0.4s ease;
+      @include mobile {
+        font-size: 30px;
+      }
+    }
+    span {
+      font-weight: 300;
+      transition: all 0.4s ease;
+      @include mobile {
+        display: none;
+      }
+    }
+  }
+  &:hover {
+    h5 {
+      font-size: 25px;
+    }
+    span {
+      font-size: 15px;
+    }
+
+    background-color: $mainColor;
+    border-radius: 10px;
+  }
+}
