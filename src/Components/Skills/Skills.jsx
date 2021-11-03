@@ -19,7 +19,7 @@ export default function SimplePaper() {
     },
     {
       val: 60,
-      img: "https://research.reading.ac.uk/act/wp-content/uploads/sites/2/icons/python.png",
+      img: "assets/python.png",
     },
     {
       val: 50,
@@ -60,7 +60,7 @@ export default function SimplePaper() {
         display: "flex",
         flexWrap: "wrap",
         "& > :not(style)": {
-          m: '2%',
+          m: "2%",
           width: 128,
           height: "100%",
           borderRadius: 1,
