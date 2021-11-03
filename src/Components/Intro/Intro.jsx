@@ -29,12 +29,11 @@ const Intro = () => {
             <span ref={typeRef}></span>
           </h3>
           <a href="https://drive.google.com/file/d/1dDqjySqtQEZNMg53griHzPNS9nNJq5qL/view?usp=sharing">
-          <Resume />
+            <Resume />
           </a>
-          <a className="downArrow" href="#portfolio" className="downArrow">
+          <a className="downArrow" href="#portfolio">
             <KeyboardArrowDown fontSize="large" />
           </a>
-
         </div>
       </div>
     </div>
